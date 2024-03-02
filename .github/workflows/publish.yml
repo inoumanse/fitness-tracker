@@ -7,14 +7,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4
             - name: node
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v4
               with:
                   node-version: 20
                   registry-url: https://registry.npmjs.org
             - name: publish
               run: npm publish --access public
-              working-directory: package.json
+              working-directory: fitness-tracker
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
