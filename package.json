@@ -13,7 +13,7 @@
   "license": "ISC",
   "repository": {
   "type": "git",
-  "url": "https://github.com/username/repository"
+  "url": "https://github.com/inoumanse/fitness-tracker"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
